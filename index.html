@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI ভিডিও জেনারেটর (Sora)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 AI টেক্সট-টু-ভিডিও (Sora)</h1>
+    <textarea id="prompt" placeholder="আপনার টেক্সট লিখুন... (বাংলা/ইংরেজি)"></textarea>
+    <div class="row">
+      <select id="style">
+        <option value="cinematic">Cinematic</option>
+        <option value="realistic">Realistic</option>
+        <option value="anime">Anime</option>
+      </select>
+      <input id="duration" type="number" min="1" max="30" value="5" /> সেকেন্ড
+    </div>
+    <button id="generateBtn">ভিডিও তৈরি করুন</button>
+    <div id="status"></div>
+    <video id="outputVideo" controls style="display:none;"></video>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
